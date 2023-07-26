@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Tailwind & DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font: Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/19a9529b65.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- navbar section -->
+    <header>
+      <nav class="max-w-6xl mx-auto">
+        <div
+          class="mt-5 py-4 md:py-5 py-12 bg-pink-500 flex flex-row justify-center items-center rounded-full"
+        >
+          <div
+            class="navbar-start lg:pl-5 flex flex-row-reverse md:flex-row justify-between items-center"
+          >
+            <div
+              class="flex flex-col md:flex-row lg:flex-row list-none gap-0 md:gap-2 lg:gap-5 text-white font-medium text-xs lg:text-lg invisible md:visible"
+            >
+              <li>Home</li>
+              <li class="text-center">About Us</li>
+              <li>Shop</li>
+              <li class="gap-0 md:gap-5 text-center">All Fruits</li>
+            </div>
+            <div class="navbar-center flex items-center ml-0 md:ml-5">
+              <img
+                class="w-10 md:w-10 h-10 md:h-10 mr-1 md:mr-3"
+                src="./images/logo.png"
+                alt=""
+              />
+              <a class="font-bold text-2xl">Fruit Burst</a>
+            </div>
+          </div>
+          <div
+            class="navbar-end w-[150px] md:w-[200px] lg:w-[400px] flex justify-end md:justify-end lg:justify-end"
+          >
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                class="p-3 w-24 md:w-40 lg:w-52 invisible md:visible rounded-full outline-none"
+              />
+              <div class="absolute right-4 top-3 invisible md:visible">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <div class="dropdown visible md:hidden">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <i class="fa-solid fa-bars"></i>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm text-sm dropdown-content z-[1] shadow bg-base-100 rounded-box w-16"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--  -->
+    </main>
+  </body>
+</html>
+
