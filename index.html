@@ -24,6 +24,18 @@
       src="https://kit.fontawesome.com/19a9529b65.js"
       crossorigin="anonymous"
     ></script>
+    <!-- customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: '#F85559',
+            }
+          }
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -31,7 +43,7 @@
     <header>
       <nav class="max-w-6xl mx-auto">
         <div
-          class="mt-5 py-4 md:py-5 py-12 bg-pink-500 flex flex-row justify-center items-center rounded-full"
+          class="mt-5 py-4 md:py-5 lg:py-7 md:bg-orange flex flex-row justify-center items-center rounded-full"
         >
           <div
             class="navbar-start lg:pl-5 flex flex-row-reverse md:flex-row justify-between items-center"
@@ -50,7 +62,7 @@
                 src="./images/logo.png"
                 alt=""
               />
-              <a class="font-bold text-2xl">Fruit Burst</a>
+              <a class="font-bold text-2xl md:text-3xl md:text-white">Fruit Burst</a>
             </div>
           </div>
           <div
@@ -86,7 +98,110 @@
     </header>
 
     <main>
-      <!--  -->
+      <!-- banner section -->
+      <section class="max-w-6xl mx-auto">
+        <div class="mt-6 md:mt-10 mx-3 md:mx-7 lg:mx-0">
+          <!-- slide 1-->
+          <div class="carousel w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg">
+            <div id="slide1" class="hero carousel-item" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md text-white">
+                  <h1 class="mb-5 text-2xl md:text-4xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-4 text-xs md:text-lg">We supply highly quality organic products</p>
+                  <button class="btn bg-orange border-none text-white">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div id="slide2" class="hero carousel-item" style="background-image: url(./images/banner2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md text-white">
+                  <h1 class="mb-5 text-2xl md:text-4xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-4 text-xs md:text-lg">We supply highly quality organic products</p>
+                  <button class="btn bg-orange border-none text-white">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide 3 -->
+            <div id="slide3" class="hero carousel-item" style="background-image: url(./images/banner3.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md text-white">
+                  <h1 class="mb-5 text-2xl md:text-4xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-4 text-xs md:text-lg">We supply highly quality organic products</p>
+                  <button class="btn bg-orange border-none text-white">Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide 4 -->
+            <div id="slide4" class="hero carousel-item" style="background-image: url(./images/banner4.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md text-white">
+                  <h1 class="mb-5 text-2xl md:text-4xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-4 text-xs md:text-lg">We supply highly quality organic products</p>
+                  <button class="btn bg-orange border-none text-white">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <!-- fruits -->
+        <div class="max-w-[80%] mx-auto px-8 py-7 grid grid-cols-5 md:grid-cols-5 invisible md:visible bg-base-100 relative -top-[60px] md:-top-[80px] lg:-top-[100px] shadow-lg rounded-lg">
+            <div>
+              <img class="w-24 h-24 mx-auto" src="./images/fruit1.png" alt="">
+              <p class="text-center md:text-lg lg:text-xl font-medium">Grape</p>
+            </div>
+            <div>
+              <img class="w-24 h-24 mx-auto" src="./images/fruit2.png" alt="">
+              <p class="text-center md:text-lg lg:text-xl font-medium">Orange</p>
+            </div>
+            <div>
+              <img class="w-24 h-24 mx-auto" src="./images/fruit3.png" alt="">
+              <p class="text-center md:text-lg lg:text-xl font-medium">Mango</p>
+            </div>
+            <div>
+              <img class="w-24 h-24 mx-auto" src="./images/fruit4.png" alt="">
+              <p class="text-center md:text-lg lg:text-xl font-medium">Strawberry</p>
+            </div>
+            <div>
+              <img class="w-24 h-24 mx-auto" src="./images/fruit5.png" alt="">
+              <p class="text-center md:text-lg lg:text-xl font-medium">Pomegranate</p>
+            </div>
+        </div>
+      </section>
+
+      
     </main>
   </body>
 </html>
